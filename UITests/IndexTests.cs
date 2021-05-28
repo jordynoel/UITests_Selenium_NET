@@ -100,13 +100,13 @@ namespace Selenium_NET.UITests
             //Assert.
             Assert.AreEqual(verwachteValue, HelloWorld.GetCssValue("font-weight"));
         }
+        
 
         [Test]
         public void DropdownTest()
         {
             //We vragen eerst het element op die de lijst gaat tonen.
             IWebElement DropdownShow = driver.FindElement(By.XPath("/html/body/header/nav/div/div/ul/li[3]"));
-
             //De verwachte klasse
             string verwachteKlasse = "nav-item dropdown show";
             //We kijken of we momenteel nog niet de verwachte klasse hebben.
